@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>আলোর মক টেস্ট</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .result-item {
+            text-align: left;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .result-question {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #333;
+            background-color: #f9f9f9;
+            padding: 8px;
+            border-radius: 5px;
+        }
+
+        .result-answer {
+            font-size: 1em;
+            color: #555;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="test-container">
+        <div class="header">
+            <div class="section-title">আলোর মক টেস্ট</div>
+            <div class="timer">সময়: <span id="time">00:00</span></div>
+        </div>
+
+        <div class="question-area">
+            <div class="question-number">প্রশ্ন ১</div>
+            <div class="question-text">আলোর বেগ সবচেয়ে বেশি কোথায়?</div>
+        </div>
+
+        <div class="options-area">
+            <button class="option">জল</button>
+            <button class="option">কাঁচ</button>
+            <button class="option">বায়ু</button>
+            <button class="option">শূন্যস্থান</button>
+        </div>
+
+        <div class="navigation-area">
+            <button class="prev-button" disabled>পূর্ববর্তী</button>
+            <button class="next-button">পরবর্তী</button>
+            <button class="submit-button">জমা দিন</button>
+        </div>
+
+        <div class="review-area">
+            <h3>প্রশ্ন পর্যালোচনা</h3>
+            <div class="question-grid">
+                <button class="grid-button">1</button>
+                <button class="grid-button">2</button>
+                <button class="grid-button">3</button>
+                <button class="grid-button">4</button>
+                <button class="grid-button">5</button>
+                <button class="grid-button">6</button>
+                <button class="grid-button">7</button>
+                <button class="grid-button">8</button>
+                <button class="grid-button">9</button>
+                <button class="grid-button">10</button>
+            </div>
+        </div>
+
+        <div class="result-area" style="display: none;">
+            <h2>ফলাফল</h2>
+            <div class="score">স্কোর: <span id="score">0</span></div>
+            <div class="correct-answers">সঠিক উত্তর: <span id="correct-count">0</span></div>
+            <div class="wrong-answers">ভুল উত্তর: <span id="wrong-count">0</span></div>
+            <div class="review-container">
+                <h3>প্রশ্ন পর্যালোচনা</h3>
+                <div id="review-questions"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
